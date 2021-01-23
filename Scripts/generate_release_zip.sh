@@ -67,8 +67,8 @@ then
   exit 4
 fi
 
-# TODO: refactor for Lithium - only create xcframeworks binaries
-XCFRAMEWORK=YES
+# As long as we support `.framework`, we will create .framework as well as .xcframework zips.
+COMBINED=YES
 
 if [ -z "$EE" ]
 then
